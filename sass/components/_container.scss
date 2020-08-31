@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    // padding-right: 15px;
+    // padding-left: 15px;
+    justify-content: center;
+    align-content: center;
+  }
+}
+.conteiner-me {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+    align-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+  }
+}
+
+.conteiner-subject {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0px;
+  }
+}
+.conteiner-client {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+
+    margin: 0px;
+    flex-wrap: nowrap;
+  }
+}

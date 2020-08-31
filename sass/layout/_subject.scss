@@ -1,0 +1,28 @@
+.subject {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hidden-section {
+  opacity: 1;
+  @media screen and (max-width: 1199px) {
+    opacity: 0;
+    position: absolute;
+  }
+}
+li.subject-item {
+  position: relative;
+
+  margin-right: 30px;
+  margin-bottom: 0px;
+}
+li.subject-item:last-child {
+  margin-right: 0px;
+}
