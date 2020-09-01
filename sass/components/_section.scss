@@ -1,10 +1,12 @@
 .section {
-  @media screen and (min-width: 480px) {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (max-width: 767px) {
     padding-top: 60px;
     padding-bottom: 60px;
     max-width: 480px;
-    margin-right: auto;
-    margin-left: auto;
+
     padding-left: 15px;
     padding-right: 15px;
   }

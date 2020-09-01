@@ -4,26 +4,59 @@
 //   padding: 0;
 //   border: none;
 //   background-color: transparent;
-//   // position: fixed;
-//   // top: 0;
-//   // left: 0;
-//   // width: 100%;
-//   // height: 100%;
-//   // z-index: 999;
-//   // opacity: 0;
-//   // visibility: hidden;
-//   // pointer-events: none;
-//   // transition: opacity 250px;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: 999;
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+//   transition: opacity 250px;
 // }
-// \ .menu-button.icon-close {
+// .menu-button.icon-close {
 //   display: none;
 // }
 // .menu-button.is-open .icon-burger {
 //   display: none;
-//   // opacity: 1;
-//   // visibility: visible;
-//   // pointer-events: initial;
+//   opacity: 1;
+//   visibility: visible;
+//   pointer-events: initial;
 // }
 // .menu-button.is-open .icon-close {
 //   display: block;
 // }
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button.icon-close {
+  //   opacity: 1;
+  display: block;
+}
+.menu-button.icon-burger {
+  //   opacity: 0;
+  display: none;
+}
+.menu-button.is-open .icon-close {
+  display: none;
+  //   opacity: 0;
+  // visibility: visible;
+  // pointer-events: initial;
+}
+.menu-button.is-open .icon-burger {
+  display: block;
+  //   opacity: 1;
+}
+.menu-button {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    opacity: 0;
+  }
+}

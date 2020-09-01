@@ -1,33 +1,68 @@
-.menu-button {
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-.menu-button.icon-close {
-  display: none;
-}
-.menu-button.is-open .icon-burger {
-  display: none;
-  // opacity: 1;
-  // visibility: visible;
-  // pointer-events: initial;
-}
-.menu-button.is-open .icon-close {
-  display: block;
+.container-header {
+  display: flex;
+  @media screen and (min-width: 480px) {
+    max-width: 767px;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
 }
 
 @media screen and (min-width: 480px) {
   .menu-wrapper {
     width: 480px;
-    height: 453px;
+    height: 393px;
+    top: 75px;
+    left: 0;
     position: absolute;
+    opacity: 1;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+}
+@media screen and (min-width: 480px) {
+  .menu-wrapper {
+    box-shadow: none;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-wrapper.is-open {
+    opacity: 0;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-wrapper {
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-wrapper {
+    height: 80px;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 }
 .container-header {
   display: flex;
-  justify-content: space-between;
+  padding-right: 15px;
+  padding-left: 15px;
   align-items: center;
   margin: auto;
 }
@@ -37,25 +72,21 @@
   font-weight: bold;
   font-size: 26px;
   line-height: 31px;
-  margin: 0px;
 }
 .container-nav {
   position: relative;
 
   display: flex;
-  width: 533px;
   margin-top: 24px;
   margin-right: 0px;
   margin-bottom: 18px;
-  margin-left: 215px;
-  justify-content: space-between;
-  align-items: center;
+
+  justify-content: start;
 }
 
 .navigation-logo {
   letter-spacing: 0.03em;
   width: 153px;
-  /* height: 31px;*/
   color: #000000;
 }
 .navigation-logo-text {
@@ -72,7 +103,9 @@
   color: #212121;
   transition: transform 5250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
+  &:hover {
+    color: #2196f3;
+  }
   &:focus {
     color: #2196f3;
   }
@@ -84,12 +117,37 @@
   line-height: 16px;
   letter-spacing: 0.02em;
   color: #212121;
-  margin-left: 305px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .conteiner-contact {
-  display: flex;
-  width: 330px;
+  @media screen and (max-width: 1199px) {
+    width: 160px;
+    margin-left: 84px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    // width: 350px;
+    margin-left: 305px;
+  }
 }
 .container-image {
   display: flex;
@@ -109,16 +167,24 @@
   }
 }
 
-.conteiner-contact:last-child {
-  margin-right: 215px;
-}
 .container-menu {
   display: flex;
   width: 294px;
   /* height: 48px; */
   padding-left: 0px;
   justify-content: space-between;
-  margin-left: 85px;
+  align-content: center;
+  align-items: center;
+  // margin-left: 85px;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    width: 99px;
+    height: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+  }
 }
 
 .list-item:not(:last-child) {
@@ -129,7 +195,7 @@
 }
 .colour-line-studio::after {
   position: absolute;
-  bottom: -19px;
+  bottom: -1px;
 
   display: block;
   content: ' ';
@@ -138,6 +204,12 @@
   background: #2196f3;
 
   border-radius: 2px;
+  @media screen and (min-width: 480px) {
+    top: 20px;
+  }
+  @media screen and (min-width: 767px) {
+    top: 77px;
+  }
 }
 
 .portfolio {
@@ -146,7 +218,7 @@
 
 .colour-line-portfolio::after {
   position: absolute;
-  bottom: -18px;
+  bottom: -2px;
 
   display: block;
   content: ' ';

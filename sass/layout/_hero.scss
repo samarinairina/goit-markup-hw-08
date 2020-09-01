@@ -1,6 +1,7 @@
 .hero {
   background: #686672;
   height: 600px;
+  width: 100%;
   max-width: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.8),
@@ -9,19 +10,15 @@
     url('../img/main/hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  @media screen and (min-width: 480px) {
-    min-width: 480px;
-    width: 100%;
-    height: 400px;
-  }
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .text-hero {
   display: flex;
-  /* width: 696px; */
-  // font-weight: 900;
-  // font-size: 44px;
-  // line-height: 136%;
+
   text-align: center;
   justify-content: center;
   letter-spacing: 0.06em;

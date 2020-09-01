@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <!-- <body class="body">
+  <body class="body modal-open" >
     <header class="header container-header">
       
       <div class="navigation container-nav">
         <a
-          class="navigation-logo"
+          class="navigation-logo" 
           href="./index.html"
           aria-label="Web Studio"
           lang="en"
@@ -33,7 +33,7 @@
           </svg>
         </button>
 
-        <nav class="menu-wrapper" data-menu>
+        <nav class="menu-wrapper is-open" data-menu>
           <ul class="list container-menu">
             <li class="list-item studio colour-line-studio list-item-menu">
               <a class="link" href="./index.html" aria-label="Студия">Студия</a>
@@ -62,42 +62,8 @@
           </ul>
         </nav>
         
-    </header> -->
+    </header> 
 
-<body class="body">
-  <header class="header container-header">
-    <!--навигация сайта WEB STUDIO-->
-    <nav class="navigation container-nav">
-      <a class="navigation-logo" href="./index.html" aria-label="Web Studio" lang="en"><span
-          class="navigation-logo-text">Web</span> Studio</a>
-      <ul class="list container-menu">
-        <li class="list-item studio list-item-menu">
-          <a class="link" href="./index.html" aria-label="Студия">Студия</a>
-        </li>
-        <li class="list-item portfolio colour-line-portfolio list-item-menu">
-          <a class="link" href="./portfolio.html" aria-label="Портфолио">Портфолио</a>
-        </li>
-        <li class="list-item contact list-item-menu">
-          <a class="link" href="" aria-label="Контакты">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <ul class="list conteiner-contact">
-      <li class="list-item container-image">
-        <svg width="16" height="11.2">
-          <use href="./img/sprite.svg#icon-imeil"></use>
-        </svg>
-        <a class="link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-      </li>
-      <li class="list-item container-image">
-        <svg width="10" height="14.94">
-          <use href="./img/sprite.svg#icon-telefone"></use>
-        </svg>
-
-        <a class="link-contact" href="tel:+380961111111">+380961111111</a>
-      </li>
-    </ul>
-  </header>
 
     <main>
       <!--секция заказа услуги-->
@@ -109,8 +75,6 @@
         </span>
 
         <!--Бєкдроп и модальное окно-->
-
-
 
         <div data-modal class="backdrop is-hidden">
           <div class="modal">
@@ -476,8 +440,10 @@
         </ul>
       </section>
     </main>
-<!-- 
+
     <footer class="footer footer-conteiner">
+      <div class="footer-adapt">
+      <div class="footer-mobile">
       <div >
         <ul class="footer-logo">
           <li class="nav-text">
@@ -508,7 +474,7 @@
 
       <!--cписок ссылок на социальные сети-->
 
-      <!-- <div class="footer-button">
+       <div class="footer-button">
         <h3 class="footer-title-link">присоединяйтесь</h3>
         <ul class="footer-conteiner">
           <li class="social-link fotter-social">
@@ -541,6 +507,8 @@
           </li>
         </ul>
       </div>
+
+      </div>
       
       <div class="footer-input-email">
       <h3 class="footer-title-link">Подпишитесь на рассылку</h3>
@@ -558,8 +526,8 @@
       </div>
 
       </div>
-        
-    </footer> --> -->
+        </div>
+    </footer>
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>

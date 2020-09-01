@@ -12,49 +12,52 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
-  <body class="body">
+  <body class="body modal-open">
     <header class="header container-header">
-      <!--навигация сайта WEB STUDIO-->
-      <nav class="navigation container-nav">
-        <a
-          class="navigation-logo"
-          href="./index.html"
-          aria-label="Web Studio"
-          lang="en"
-          ><span class="navigation-logo-text">Web</span> Studio</a
-        >
-        <ul class="list container-menu">
-          <li class="list-item studio list-item-menu">
-            <a class="link" href="./index.html" aria-label="Студия">Студия</a>
-          </li>
-          <li class="list-item portfolio colour-line-portfolio list-item-menu">
-            <a class="link" href="./portfolio.html" aria-label="Портфолио"
-              >Портфолио</a
-            >
-          </li>
-          <li class="list-item contact list-item-menu">
-            <a class="link" href="" aria-label="Контакты">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list conteiner-contact">
-        <li class="list-item container-image">
-          <svg width="16" height="11.2">
-            <use href="./img/sprite.svg#icon-imeil"></use>
+  
+      <div class="navigation container-nav">
+        <a class="navigation-logo" href="./index.html" aria-label="Web Studio" lang="en"><span
+            class="navigation-logo-text">Web</span> Studio</a>
+      </div>
+      
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="navigation" data-menu-button>
+          <svg width="40px" height="40px">
+            <use class="icon-burger" href="./img/sprite.svg#icon-menu-burger"></use>
+            <use class="icon-close" href="./img/sprite.svg#icon-menu-close"></use>
           </svg>
-          <a class="link-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="list-item container-image">
-          <svg width="10" height="14.94">
-            <use href="./img/sprite.svg#icon-telefone"></use>
-          </svg>
+        </button>
+      
+        <nav class="menu-wrapper" data-menu>
+          <ul class="list container-menu">
+            <li class="list-item studio  list-item-menu">
+              <a class="link" href="./index.html" aria-label="Студия">Студия</a>
+            </li>
+            <li class="list-item portfolio colour-line-portfolio list-item-menu">
+              <a class="link" href="./portfolio.html" aria-label="Портфолио">Портфолио</a>
+            </li>
+            <li class="list-item contact list-item-menu">
+              <a class="link" href="" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+        
+          <ul class="list conteiner-contact">
+            <li class="list-item container-image">
+              <svg width=16 height=11.2>
+                <use href="./img/sprite.svg#icon-imeil"></use>
+              </svg>
+              <a class="link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="list-item container-image">
+              <svg width=10 height=14.94>
+                <use href="./img/sprite.svg#icon-telefone"></use>
+              </svg>
+              <a class="link-contact" href="tel:+380961111111">+380961111111</a>
+            </li>
+          </ul>
+        </nav>
+        
+        </header>
 
-          <a class="link-contact" href="tel:+380961111111">+380961111111</a>
-        </li>
-      </ul>
-    </header>
 
     <main>
       <h1 hidden>Галерея работ</h1>
@@ -322,5 +325,6 @@
           </div>
 
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
